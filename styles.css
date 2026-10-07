@@ -1,0 +1,568 @@
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0 6%;
+    background-color: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* Navigation */
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.nav-list li {
+    margin: 0 10px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 12px;
+    transition: 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #60a5fa;
+}
+
+
+/* Search */
+
+.right-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#search {
+    width: 150px;
+    padding: 9px 12px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+    display: inline-block;
+    padding: 11px 22px;
+    border-radius: 7px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-outline {
+    border-color: white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: #111827;
+}
+
+.btn-dark {
+    background-color: #111827;
+    color: white;
+}
+
+.btn-dark:hover {
+    background-color: #374151;
+}
+
+.btn-sm {
+    padding: 8px 14px;
+    background-color: #2563eb;
+    border: none;
+    color: white;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.88),
+            rgba(30, 64, 175, 0.85)
+        ),
+        url("../images/laptop.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-text {
+    max-width: 700px;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero-text h1 span {
+    display: block;
+    color: #60a5fa;
+}
+
+.hero-text p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* ================= COMMON CONTENT ================= */
+
+.content-section {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.box-main {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.content-text {
+    max-width: 800px;
+}
+
+.section-label {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.text-big {
+    font-size: 42px;
+    margin: 10px 0 20px;
+}
+
+.text-small {
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+
+/* ================= WEB SECTION ================= */
+
+.web-section {
+    background-color: #f8fafc;
+}
+
+
+/* ================= C SECTION ================= */
+
+.c-section {
+    background-color: #e0f2fe;
+}
+
+
+/* ================= JAVA SECTION ================= */
+
+.java-section {
+    width: 90%;
+    max-width: 1200px;
+    min-height: 450px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+
+/* Đây chính là phần tương ứng với row-reverse
+   khi muốn đảo vị trí text và image */
+
+.section-Left {
+    flex-direction: row-reverse;
+}
+
+.paras {
+    flex: 1;
+}
+
+.section-title {
+    font-size: 42px;
+    margin: 10px 0 20px;
+}
+
+.section-description {
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.thumbnail {
+    flex: 0 0 350px;
+}
+
+.thumbnail img {
+    width: 100%;
+    display: block;
+
+    border-radius: 20px;
+
+    border: 4px solid #2563eb;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================= COURSES ================= */
+
+.courses-section {
+    padding: 80px 8%;
+    background-color: #f8fafc;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.section-heading p {
+    color: #64748b;
+}
+
+.course-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    flex: 1;
+    min-width: 280px;
+
+    padding: 35px 30px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+}
+
+.course-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    background-color: #dbeafe;
+    color: #2563eb;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.course-card h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.course-card p {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.course-card a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background-color: #111827;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-content {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.footer h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.footer h4 {
+    margin-bottom: 12px;
+}
+
+.footer p {
+    color: #cbd5e1;
+}
+
+.footer a {
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer a:hover {
+    color: #60a5fa;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+
+    border-top: 1px solid #374151;
+
+    color: #94a3b8;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        padding: 15px 5%;
+    }
+
+    .nav-list {
+        order: 3;
+        width: 100%;
+
+        justify-content: center;
+
+        margin: 15px 0 0;
+        flex-wrap: wrap;
+    }
+
+    .right-nav {
+        margin-left: auto;
+    }
+
+    .hero-text h1 {
+        font-size: 45px;
+    }
+
+    .java-section {
+        flex-direction: column;
+        padding: 70px 0;
+    }
+
+    .thumbnail {
+        width: 80%;
+        flex-basis: auto;
+    }
+
+    .course-card {
+        min-width: calc(50% - 15px);
+        flex-basis: calc(50% - 15px);
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .right-nav {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    #search {
+        width: 60%;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        text-align: center;
+    }
+
+    .content-section {
+        padding: 70px 0;
+    }
+
+    .box-main {
+        width: 85%;
+    }
+
+    .text-big {
+        font-size: 34px;
+    }
+
+    .java-section {
+        width: 85%;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+    .thumbnail {
+        width: 100%;
+    }
+
+    .course-container {
+        flex-direction: column;
+    }
+
+    .course-card {
+        min-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+}
